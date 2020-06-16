@@ -20,9 +20,9 @@
 module.exports = {
     // Set environment variables or hard-code here
     credentials: {
-        client_id: nfdvV3F4Xg9WD47CfCgARRn7U1mYlHZQ,
-        client_secret: bNYCZIDFcG9Qrffd,
-        callback_url: "https://dwpvisualizedata.herokuapp.com/api/forge/callback/oauth"
+        client_id: process.env.FORGE_CLIENT_ID,
+        client_secret: process.env.FORGE_CLIENT_SECRET,
+        callback_url: process.env.FORGE_CALLBACK_URL
     },
     scopes: {
         // Required scopes for the server-side application
